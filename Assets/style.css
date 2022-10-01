@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+
+ .head {
+    display: flex;
+    justify-content: space-between; 
+    background-color:teal;
+    padding:18px 100px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.head #shownav, .head #togglenav {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 45px;
+}
+
+.sectionone {
+    background-color: #fff;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    gap: 100px;
+}
+
+.img {
+    width: 400px;
+}
+
+#heading {
+    padding-bottom: 10px;
+    color: teal;
+}
+#para {
+    padding-bottom: 20px;
+}
+
+.sectiontwo {
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: teal;
+}
+
+.subsectiontwo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    padding: 20px; 
+    width:30%
+}
+
+button {
+    background-color: teal;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.sectionthree {
+    background-color: turquoise;
+}
+
+.thirdcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo2 {
+    width: 150px;
+    padding-left: 40px;
+}
+
+footer {
+    
+    text-align: center;
+    background-color: teal;
+    padding:40px 0px;
+}
+footer h3,h2,img {
+    padding-bottom: 15px;
+}
+footer p {
+    padding:10px;
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+
+
+    .head {
+        width: 100%;
+        padding: 15px;
+    }
+
+   .head #togglenav {
+        display: inline-block;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 300s ease;
+        padding-right: 15px;
+    }
+
+    
+
+    .head #shownav:checked ~ ul {
+         display: block;
+    }
+    .head ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    .head ul li {
+        text-align: center;
+        background-color: turquoise;
+        padding: 18px 0;
+        transition: all 300ms ease;
+        cursor: pointer;
+    }
+
+    .sectionone {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    #heading {
+        padding-top: 35px;
+    }
+
+    #secondpara {
+        padding-bottom: 20px;
+    }
+
+    
+    .img {
+        width: 200px;
+    }
+
+    .heading {
+        display: inline-block;
+    }
+
+    .projects {
+        width: 200px;
+        display: inline-block;
+    }
+
+    .subsectiontwo {
+        display: inline-block;
+    }
+
+    .thirdcontainer {
+        display: inline-block;
+        padding: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+
+
+    .head {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sectionone {
+        display: flex;
+        padding-top: 100px;
+        padding-left: 80px;
+        padding-right: 70px;
+        padding-bottom: 50px;
+        gap: 60px;
+    }
+
+    #secondpara {
+        padding-bottom: 20px;
+    }
+
+    
+    .img {
+        width: 300px;
+    }
+
+    .heading {
+        display: inline-block;
+    }
+
+    .projects {
+        width: 350px;
+    }
+
+    .subsectiontwo {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 10%;
+        padding: 15px;
+    }
+
+    .thirdcontainer {
+        display: inline-block;
+        padding: 40px;
+    }
+}
