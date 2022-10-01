@@ -126,7 +126,7 @@ footer p {
     padding:10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 699px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -203,11 +203,9 @@ footer p {
         display: inline-block;
         padding: 40px;
     }
-
-
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -252,11 +250,12 @@ footer p {
         display: grid;
         grid-template-columns: 40% 40%;
         column-gap: 10%;
-        padding: 15px;
     }
 
     .thirdcontainer {
         display: inline-block;
         padding: 40px;
     }
+
+   
 }
