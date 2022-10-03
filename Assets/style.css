@@ -76,18 +76,19 @@ ul {
 .heading {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0px 80px;
     color: teal;
 }
 
 .subsectiontwo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects {
     padding: 20px; 
-    width:30%
+    width:30%;
 }
 
 button {
